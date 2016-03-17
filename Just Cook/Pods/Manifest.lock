@@ -1,0 +1,13 @@
+PODS:
+  - EasyAnimation (1.0.4)
+  - SnapKit (0.15.0)
+
+DEPENDENCIES:
+  - EasyAnimation
+  - SnapKit (~> 0.15.0)
+
+SPEC CHECKSUMS:
+  EasyAnimation: 4aabd439b4038f48d72939cc19d6220363b3206e
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
+
+COCOAPODS: 0.39.0

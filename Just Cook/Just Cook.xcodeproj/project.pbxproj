@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3241D6B1C9AF3E7009907A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3241D6A1C9AF3E7009907A9 /* AppDelegate.swift */; };
+		D3241D6D1C9AF3E7009907A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3241D6C1C9AF3E7009907A9 /* ViewController.swift */; };
+		D3241D721C9AF3E7009907A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3241D711C9AF3E7009907A9 /* Assets.xcassets */; };
+		D3241D7D1C9AF565009907A9 /* WelcomeTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */; };
+		F2A9A1A4D2FF292DC8BCA8D0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B470D39755B826A492C29 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		474B470D39755B826A492C29 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A8B9E24336B1684F0CB622E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B3C7C50BC8A0113FCC3AD2F2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D3241D671C9AF3E7009907A9 /* Just Cook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Just Cook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3241D6A1C9AF3E7009907A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3241D6C1C9AF3E7009907A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3241D711C9AF3E7009907A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3241D761C9AF3E7009907A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTutorialViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3241D641C9AF3E7009907A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2A9A1A4D2FF292DC8BCA8D0 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090D376326174BF4B02A4125 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3C7C50BC8A0113FCC3AD2F2 /* Pods.debug.xcconfig */,
+				9A8B9E24336B1684F0CB622E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		89ECFBB5E3C48BA079062A9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				474B470D39755B826A492C29 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3241D5E1C9AF3E7009907A9 = {
+			isa = PBXGroup;
+			children = (
+				D3241D691C9AF3E7009907A9 /* Just Cook */,
+				D3241D681C9AF3E7009907A9 /* Products */,
+				090D376326174BF4B02A4125 /* Pods */,
+				89ECFBB5E3C48BA079062A9F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3241D681C9AF3E7009907A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3241D671C9AF3E7009907A9 /* Just Cook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3241D691C9AF3E7009907A9 /* Just Cook */ = {
+			isa = PBXGroup;
+			children = (
+				D3241D6A1C9AF3E7009907A9 /* AppDelegate.swift */,
+				D3241D6C1C9AF3E7009907A9 /* ViewController.swift */,
+				D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */,
+				D3241D711C9AF3E7009907A9 /* Assets.xcassets */,
+				D3241D761C9AF3E7009907A9 /* Info.plist */,
+			);
+			path = "Just Cook";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3241D661C9AF3E7009907A9 /* Just Cook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3241D791C9AF3E7009907A9 /* Build configuration list for PBXNativeTarget "Just Cook" */;
+			buildPhases = (
+				E22546D216031E4FB98975B7 /* Check Pods Manifest.lock */,
+				D3241D631C9AF3E7009907A9 /* Sources */,
+				D3241D641C9AF3E7009907A9 /* Frameworks */,
+				D3241D651C9AF3E7009907A9 /* Resources */,
+				E36D922CD27DA14C695E5088 /* Embed Pods Frameworks */,
+				937F27D8FA6A04615AF6D73D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Just Cook";
+			productName = "Just Cook";
+			productReference = D3241D671C9AF3E7009907A9 /* Just Cook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3241D5F1C9AF3E7009907A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ilya Velilyaev";
+				TargetAttributes = {
+					D3241D661C9AF3E7009907A9 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D3241D621C9AF3E7009907A9 /* Build configuration list for PBXProject "Just Cook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3241D5E1C9AF3E7009907A9;
+			productRefGroup = D3241D681C9AF3E7009907A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3241D661C9AF3E7009907A9 /* Just Cook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3241D651C9AF3E7009907A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3241D721C9AF3E7009907A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		937F27D8FA6A04615AF6D73D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E22546D216031E4FB98975B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E36D922CD27DA14C695E5088 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3241D631C9AF3E7009907A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3241D7D1C9AF565009907A9 /* WelcomeTutorialViewController.swift in Sources */,
+				D3241D6D1C9AF3E7009907A9 /* ViewController.swift in Sources */,
+				D3241D6B1C9AF3E7009907A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D3241D771C9AF3E7009907A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3241D781C9AF3E7009907A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3241D7A1C9AF3E7009907A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3C7C50BC8A0113FCC3AD2F2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Just Cook/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.phystech.Just-Cook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D3241D7B1C9AF3E7009907A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A8B9E24336B1684F0CB622E /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Just Cook/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.phystech.Just-Cook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3241D621C9AF3E7009907A9 /* Build configuration list for PBXProject "Just Cook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3241D771C9AF3E7009907A9 /* Debug */,
+				D3241D781C9AF3E7009907A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3241D791C9AF3E7009907A9 /* Build configuration list for PBXNativeTarget "Just Cook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3241D7A1C9AF3E7009907A9 /* Debug */,
+				D3241D7B1C9AF3E7009907A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3241D5F1C9AF3E7009907A9 /* Project object */;
+}
