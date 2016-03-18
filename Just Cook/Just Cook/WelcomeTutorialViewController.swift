@@ -11,7 +11,7 @@ import SnapKit
 import EasyAnimation
 
 class WelcomeTutorialViewController: UIViewController {
-
+    
     let fridgeBoyImage = UIImage(named: "FridgeBoy")
     let welcomeLabel = UILabel()
     let letsCookButton = UIButton(type: .Custom)
@@ -19,9 +19,6 @@ class WelcomeTutorialViewController: UIViewController {
     let skipButton = UIButton(type: .Custom)
     var greyRectangle : UIView!
     let tutvc = TutorialPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: [:])
-
-    
-    
     
     
     override func viewDidLoad() {
@@ -41,7 +38,7 @@ class WelcomeTutorialViewController: UIViewController {
         greyRectangle.backgroundColor = UIColor.blackColor()
         greyRectangle.alpha = 0.0
         view.addSubview(greyRectangle)
-
+        
         
         //MARK: welcomeLabel init
         if #available(iOS 8.2, *) {
@@ -68,7 +65,7 @@ class WelcomeTutorialViewController: UIViewController {
         }
         
         buttonLabel.text = "Let's just cook!"
-
+        
         
         if #available(iOS 8.2, *) {
             buttonLabel.font = UIFont.systemFontOfSize(20, weight: UIFontWeightThin)
@@ -91,7 +88,7 @@ class WelcomeTutorialViewController: UIViewController {
         skipButton.enabled = false
         skipButton.alpha = 0
     }
-
+    
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
@@ -112,7 +109,7 @@ class WelcomeTutorialViewController: UIViewController {
                 animations: { () -> Void in
                     self.letsCookButton.transform = CGAffineTransformMakeScale(1, 1)
                 }, completion: nil)
-
+        
     }
     
     func justCookButtonPressed() {
@@ -142,12 +139,11 @@ class WelcomeTutorialViewController: UIViewController {
     }
     
     func startPresentation() {
+        
         self.addChildViewController(tutvc)
         
         self.view.addSubview(tutvc.view)
         tutvc.didMoveToParentViewController(self)
-        
-        
         
         tutvc.view.transform = CGAffineTransformMakeScale(0, 0)
         
@@ -163,11 +159,8 @@ class WelcomeTutorialViewController: UIViewController {
         buttonLabel.snp_updateConstraints { (make) -> Void in
             make.center.equalTo(skipButton)
         }
-        view.setNeedsUpdateConstraints()
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "changeButtonTitle", name: "lastPageIsOpened", object: nil)
-        
-        
         
         UIView.animateWithDuration(0.5,
             delay: 0,
@@ -188,7 +181,40 @@ class WelcomeTutorialViewController: UIViewController {
     }
     
     func skipButtonPressed() {
-        print("skip")
+        /* UNCOMMENT ON RELEASE */
+        //NSUserDefaults.standardUserDefaults().setBool(true, forKey: "didFinishTutorial")
+        //NSUserDefaults.standardUserDefaults().synchronize()
+        
+        UIView.animateAndChainWithDuration(0.4,
+            delay: 0,
+            usingSpringWithDamping: 0,
+            initialSpringVelocity: 0,
+            options: [],
+            animations: { () -> Void in
+                self.tutvc.view.transform = CGAffineTransformMakeTranslation(20, 0)
+            }, completion: nil).animateAndChainWithDuration(0.4,
+                delay: 0,
+                options: [],
+                animations: { () -> Void in
+                    self.tutvc.view.transform = CGAffineTransformMakeTranslation(-1000, 0)
+                    self.skipButton.transform = CGAffineTransformMakeTranslation(10, 0)
+                }, completion: nil).animateWithDuration(0.4,
+                    animations: { () -> Void in
+                        self.skipButton.transform = CGAffineTransformMakeTranslation(-1000, 0)
+                        self.greyRectangle.alpha = 0
+                    }) { (finished) -> Void in
+                        if finished {
+                            self.tutvc.view.removeFromSuperview()
+                            self.skipButton.removeFromSuperview()
+                            self.tutvc.removeFromParentViewController()
+                            self.view.removeFromSuperview()
+                            self.removeFromParentViewController()
+                        }
+        }
+        
+        
+        
+        
     }
     
     override func viewWillDisappear(animated: Bool) {

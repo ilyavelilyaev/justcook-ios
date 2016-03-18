@@ -14,8 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var viewController: ViewController?
     
-    //TO BE CHANGED ON RELEASE TO FALSE!
-    var firstRun: Bool = true
+    var didFinishTutorial: Bool = false
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
@@ -27,20 +26,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.rootViewController = self.viewController
         
         let defaults = NSUserDefaults.standardUserDefaults()
-        if (defaults.objectForKey("firstRun") == nil) {
-            firstRun = true
-            defaults.setObject(NSDate(), forKey: "firstRun")
+        if let finished = defaults.objectForKey("didFinishTutorial") as? Bool {
+            didFinishTutorial = finished
         }
-        
-        NSUserDefaults.standardUserDefaults().synchronize()
-        
+                
         let tutorialViewController = WelcomeTutorialViewController()
         
         self.window!.makeKeyAndVisible()
 
         
-        if firstRun {
-            self.viewController!.presentViewController(tutorialViewController, animated: false, completion: nil)
+        if !didFinishTutorial {
+            //self.viewController!.presentViewController(tutorialViewController, animated: false, completion: nil)
+            self.viewController!.addChildViewController(tutorialViewController)
+            
+            self.viewController!.view.addSubview(tutorialViewController.view)
+            tutorialViewController.didMoveToParentViewController(self.viewController!)
         }
         
         
