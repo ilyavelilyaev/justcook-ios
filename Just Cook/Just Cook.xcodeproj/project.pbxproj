@@ -11,6 +11,9 @@
 		D3241D6D1C9AF3E7009907A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3241D6C1C9AF3E7009907A9 /* ViewController.swift */; };
 		D3241D721C9AF3E7009907A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3241D711C9AF3E7009907A9 /* Assets.xcassets */; };
 		D3241D7D1C9AF565009907A9 /* WelcomeTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */; };
+		D3AFD8F71C9C16DE00DE5258 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AFD8F61C9C16DE00DE5258 /* TutorialPageViewController.swift */; };
+		D3AFD8F91C9C17D900DE5258 /* TutFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AFD8F81C9C17D900DE5258 /* TutFirstViewController.swift */; };
+		D3AFD8FB1C9C180400DE5258 /* TutSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AFD8FA1C9C180400DE5258 /* TutSecondViewController.swift */; };
 		F2A9A1A4D2FF292DC8BCA8D0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B470D39755B826A492C29 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,9 @@
 		D3241D711C9AF3E7009907A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3241D761C9AF3E7009907A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTutorialViewController.swift; sourceTree = "<group>"; };
+		D3AFD8F61C9C16DE00DE5258 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		D3AFD8F81C9C17D900DE5258 /* TutFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutFirstViewController.swift; sourceTree = "<group>"; };
+		D3AFD8FA1C9C180400DE5258 /* TutSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutSecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,10 @@
 				D3241D6A1C9AF3E7009907A9 /* AppDelegate.swift */,
 				D3241D6C1C9AF3E7009907A9 /* ViewController.swift */,
 				D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */,
+				D3AFD8F61C9C16DE00DE5258 /* TutorialPageViewController.swift */,
 				D3241D711C9AF3E7009907A9 /* Assets.xcassets */,
+				D3AFD8F81C9C17D900DE5258 /* TutFirstViewController.swift */,
+				D3AFD8FA1C9C180400DE5258 /* TutSecondViewController.swift */,
 				D3241D761C9AF3E7009907A9 /* Info.plist */,
 			);
 			path = "Just Cook";
@@ -120,6 +129,7 @@
 				TargetAttributes = {
 					D3241D661C9AF3E7009907A9 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2ZCQP5Y975;
 					};
 				};
 			};
@@ -205,9 +215,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3AFD8FB1C9C180400DE5258 /* TutSecondViewController.swift in Sources */,
 				D3241D7D1C9AF565009907A9 /* WelcomeTutorialViewController.swift in Sources */,
 				D3241D6D1C9AF3E7009907A9 /* ViewController.swift in Sources */,
+				D3AFD8F71C9C16DE00DE5258 /* TutorialPageViewController.swift in Sources */,
 				D3241D6B1C9AF3E7009907A9 /* AppDelegate.swift in Sources */,
+				D3AFD8F91C9C17D900DE5258 /* TutFirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,11 +313,14 @@
 			baseConfigurationReference = B3C7C50BC8A0113FCC3AD2F2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Just Cook/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.phystech.Just-Cook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -314,11 +330,14 @@
 			baseConfigurationReference = 9A8B9E24336B1684F0CB622E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Just Cook/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.phystech.Just-Cook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
