@@ -11,38 +11,33 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: Properties
     var window: UIWindow?
     var viewController: ViewController?
-    
     var didFinishTutorial: Bool = false
     
+    // MARK: Methods
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        //Initializing properties
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        viewController = ViewController()
+        window!.rootViewController = viewController
+        window!.makeKeyAndVisible()
 
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        self.viewController = ViewController()
-        
-        self.window!.backgroundColor = UIColor.greenColor()
-        self.window!.rootViewController = self.viewController
-        
+        //Discovering whether user has finished tutorial
         let defaults = NSUserDefaults.standardUserDefaults()
         if let finished = defaults.objectForKey("didFinishTutorial") as? Bool {
             didFinishTutorial = finished
         }
-                
-        let tutorialViewController = WelcomeTutorialViewController()
         
-        self.window!.makeKeyAndVisible()
-
-        
+        //Launching tutorial
         if !didFinishTutorial {
-            //self.viewController!.presentViewController(tutorialViewController, animated: false, completion: nil)
-            self.viewController!.addChildViewController(tutorialViewController)
-            
-            self.viewController!.view.addSubview(tutorialViewController.view)
-            tutorialViewController.didMoveToParentViewController(self.viewController!)
+            let tutorialViewController = WelcomeTutorialViewController()
+            viewController!.addChildViewController(tutorialViewController)
+            viewController!.view.addSubview(tutorialViewController.view)
+            tutorialViewController.didMoveToParentViewController(viewController!)
         }
-        
         
         return true
     }

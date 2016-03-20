@@ -11,6 +11,7 @@
 		D3241D6D1C9AF3E7009907A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3241D6C1C9AF3E7009907A9 /* ViewController.swift */; };
 		D3241D721C9AF3E7009907A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3241D711C9AF3E7009907A9 /* Assets.xcassets */; };
 		D3241D7D1C9AF565009907A9 /* WelcomeTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */; };
+		D38035611C9F348C00BC6BEA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D38035601C9F348C00BC6BEA /* Launch Screen.storyboard */; };
 		D3AFD8F71C9C16DE00DE5258 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AFD8F61C9C16DE00DE5258 /* TutorialPageViewController.swift */; };
 		D3AFD8F91C9C17D900DE5258 /* TutFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AFD8F81C9C17D900DE5258 /* TutFirstViewController.swift */; };
 		D3AFD8FB1C9C180400DE5258 /* TutSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AFD8FA1C9C180400DE5258 /* TutSecondViewController.swift */; };
@@ -27,6 +28,7 @@
 		D3241D711C9AF3E7009907A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3241D761C9AF3E7009907A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeTutorialViewController.swift; sourceTree = "<group>"; };
+		D38035601C9F348C00BC6BEA /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D3AFD8F61C9C16DE00DE5258 /* TutorialPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		D3AFD8F81C9C17D900DE5258 /* TutFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutFirstViewController.swift; sourceTree = "<group>"; };
 		D3AFD8FA1C9C180400DE5258 /* TutSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutSecondViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				D3241D7C1C9AF565009907A9 /* WelcomeTutorialViewController.swift */,
 				D3AFD8F61C9C16DE00DE5258 /* TutorialPageViewController.swift */,
 				D3241D711C9AF3E7009907A9 /* Assets.xcassets */,
+				D38035601C9F348C00BC6BEA /* Launch Screen.storyboard */,
 				D3AFD8F81C9C17D900DE5258 /* TutFirstViewController.swift */,
 				D3AFD8FA1C9C180400DE5258 /* TutSecondViewController.swift */,
 				D3241D761C9AF3E7009907A9 /* Info.plist */,
@@ -156,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38035611C9F348C00BC6BEA /* Launch Screen.storyboard in Resources */,
 				D3241D721C9AF3E7009907A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
